@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0px;
+}
+li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.35rem;
+    font-variant: small-caps;
+}
+li a:hover {
+    color: palevioletred;
+}
+.main {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.pic {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+#about {
+    width: 90%;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px rgb(71, 11, 127), -10px -10px palevioletred;
+    padding: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#about div {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 400px;
+    height: 500px;
+}
+#about div p {
+    width: 50%;
+    font-size: 1.1rem;
+}
+#projects {
+    width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    margin-top: 0px;
+}
+#projects > h2 {
+    color: aliceblue;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first,
+.second {
+    width: 45%;
+    height: 400px;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first {
+    background-image: url(earth.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.second {
+    background-image: url(bbcnews.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.first div,
+.second div {
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -35%;
+}
+.f-pro {
+    height: 50%;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.f-pro:hover {
+    translate: 0px -60%;
+}
+.s-pro {
+    height: 50%;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.s-pro:hover {
+    translate: 0px -60%;
+}
+.f-pro h2,
+.s-pro h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.f-pro p {
+    font-size: 1.2rem;
+}
+.s-pro p {
+    font-size: 1.2rem;
+}
+.f-pro a,
+.s-pro a {
+    color: navy;
+    border: 4px solid rgba(80, 177, 180, 0.764);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+#contact {
+    width: 100%;
+    background-color: rgb(71, 11, 127);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    text-align: center;
+    color: aliceblue;
+    padding: 4rem;
+    font-size: 1.3rem;
+    padding-bottom: 0rem;
+}
+#contact p {
+    margin-bottom: 3rem;
+}
+form {
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.left {
+    width: 40%;
+}
+.right {
+    width: 60%;
+}
+input {
+    display: block;
+    width: 90%;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+.bott {
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+}
+button {
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 1.3rem;
+    background-color: rgb(128, 213, 213);
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+textarea {
+    display: block;
+    width: 100%;
+    height: 85%;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: black;
+    color: aliceblue;
+}
+footer {
+    width: 100%;
+    height: 5.5rem;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.footer-right {
+    display: flex;
+    gap: 0.6rem;
+}
+a img {
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+a img:hover {
+    background-color: rgb(128, 213, 213);
+}
+@media (max-width: 989px) {
+    .first,
+    .second {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    #about {
+        padding: 2rem 4rem;
+    }
+    #about div {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: 500px;
+    }
+    #about div p {
+        width: 80%;
+    }
+}
